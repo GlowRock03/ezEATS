@@ -1,28 +1,25 @@
 import React from 'react';
 
-import logo from '../images/ezeats logo.png';
+import '../css/recipe.css';
 
-import '../css/recipe.css'
-
-function recipe(props) {
-
+function Recipe(props) {
     // Check if ingredients exist and is an array before trying to join
     const ingredientsList = props.ingredients ? props.ingredients.join(" • ") : 'No ingredients';
 
-    return( 
-        <div class="recipe-border">
-            <div class="recipe-header">
-                <img src={logo} alt="image"/>
+    return ( 
+        <div className="recipe-border">
+            <div className="recipe-header">
+                <img src={props.img} alt="recipe image" />
                 <h2>{props.name}</h2>
             </div>
-            <div class="ingredients">
+            <div className="ingredients">
                 {ingredientsList}
             </div>
-        <div class="prices">
-            Money saved: <div class="saved">{props.moneySaved}$</div>
+            <div className="prices">
+                Money saved: <div className="saved">{props.moneySaved}$</div>
+            </div>
         </div>
-    </div>
     );
 }
 
-export default recipe;
+export default Recipe;
