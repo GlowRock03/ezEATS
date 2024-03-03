@@ -17,29 +17,29 @@ function footer() {
             <div class="footer-section footer-josh">
                 <h4>Josh Blinn</h4>
                 <ul>
-                    <li>github</li>
-                    <li>LinkedIn</li>
+                    <li><a href="https://github.com/LeBlinn">github</a></li>
+                    <li><a href="https://www.linkedin.com/in/josh-blinn/">LinkedIn</a></li>
                 </ul>
             </div>
             <div class="footer-section footer-felix">
-                <h4>Felix</h4>
+                <h4>Felix Allard</h4>
                 <ul>
-                    <li>github</li>
+                    <li><a href="https://github.com/falla055">github</a></li>
                     <li>LinkedIn</li>
                 </ul>
             </div>
             <div class="footer-section footer-thomas">
-            <h4>Thomas</h4>
+            <h4>Thomas Ford</h4>
             <ul>
-                <li>github</li>
-                    <li>LinkedIn</li>
+                <li><a href="https://github.com/GlowRock03">github</a></li>
+                <li>LinkedIn</li>
             </ul>
             </div>
             <div class="footer-section footer-alec">
-            <h4>Alec</h4>
+            <h4>Alec Bazinet</h4>
             <ul>
-                <li>github</li>
-                <li>LinkedIn</li>
+                <li><a href="https://github.com/AlecBaz">github</a></li>
+                <li><a href="https://www.linkedin.com/in/alec-bazinet-273536218/">LinkedIn</a></li>
             </ul>
             </div>
         </footer>

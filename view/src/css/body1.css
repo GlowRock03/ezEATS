@@ -7,22 +7,26 @@
     margin: 0 auto;
     max-width: 1200px;
     padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
   }
 
   .textSection {
     flex: 1;
     max-width: 50%;
+    justify-content: right;
+    
   }
 
   .imageSection {
     flex: 1;
-    max-width: 100%;
+    max-width: 5%;
     display:flex;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: right;
+    width: 5%;
+    
   }
 
-  #body1-img {
-    max-width: 100%;
-    width: 100%;
+  .imgbody1 {
+    max-width: 400px;
   }

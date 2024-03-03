@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { db } from '../firebase';
+
 import Recipe from './recipe';
 
 import '../css/recipeContainer.css'
 
 function recipeContainer() {
+    
+    /*
+    useEffect(() => {
+        db.collection('Recipes').limit(10).get().then((querySnapshot) => {
+          const data = querySnapshot.docs.map(doc => doc.data());
+          console.log(data); // Do something with the data
+        });
+      }, []);
+      */
+    
     const recipes = [
         {
           id: 1,
@@ -16,7 +28,7 @@ function recipeContainer() {
           id: 2,
           name: 'Recipe 2',
           url: 'urlsir',
-          ingredients: ['Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free','Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free', 'Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free','Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free', 'Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free','Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free', 'Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free','Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free', 'Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free','Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free', 'Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free','Pescatarian', 'Egg Free', 'Soy Free', 'Low Sodium', 'Vegetarian', 'Gluten Free'],
+          ingredients: ['Pescatarian', 'Egg Free', 'Soy Free'],
           moneySaved: 3
         },
         {
@@ -25,42 +37,21 @@ function recipeContainer() {
             url: 'urlsir',
             ingredients: ['Pescatarian', 'Egg Free', 'Soy Free'],
             moneySaved: 3
-        },
-        {
+          },
+          {
             id: 4,
             name: 'Recipe 4',
             url: 'urlsir',
             ingredients: ['Pescatarian', 'Egg Free', 'Soy Free'],
             moneySaved: 3
-        },
-        {
+          },
+          {
             id: 5,
             name: 'Recipe 5',
             url: 'urlsir',
             ingredients: ['Pescatarian', 'Egg Free', 'Soy Free'],
             moneySaved: 3
-        },
-        {
-            id: 6,
-            name: 'Recipe 6',
-            url: 'urlsir',
-            ingredients: ['Pescatarian', 'Egg Free', 'Soy Free'],
-            moneySaved: 3
-        },
-        {
-            id: 7,
-            name: 'Recipe 7',
-            url: 'urlsir',
-            ingredients: ['Pescatarian', 'Egg Free', 'Soy Free'],
-            moneySaved: 3
-        },
-        {
-            id: 8,
-            name: 'Recipe 8',
-            url: 'urlsir',
-            ingredients: ['Pescatarian', 'Egg Free', 'Soy Free'],
-            moneySaved: 3
-        },
+          },
         // ... add as many recipes as you want
       ];
 
