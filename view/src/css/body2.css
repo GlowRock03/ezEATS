@@ -1,0 +1,24 @@
+.TwoSidesContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+
+  .textSection {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .imageSection {
+    flex: 1;
+    max-width: 10%;
+  }
+
+  #body2-img {
+    max-width: 100%;
+  }

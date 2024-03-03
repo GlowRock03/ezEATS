@@ -1,0 +1,60 @@
+#footerwidth {
+    width: 70%;
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Optional: add padding inside the container */
+}
+
+.footer {
+    /*background-color: #323235;
+    color: white;*/
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-logo p {
+    max-width: 300px; /* Adjust the width to fit the content */
+  }
+  
+  .footer-section h4 {
+    margin-top: 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    padding: 5px 0; /* Spacing between list items */
+  }
+
+  #footerlogo {
+    max-height: 50px;
+    max-width: 100%; /* This will make sure the image is not wider than its container */
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block; /* This prevents inline default space below the image */
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-section {
+      margin-bottom: 20px;
+    }
+    .footer-social {
+      justify-content: center;
+    }
+  }
+  
